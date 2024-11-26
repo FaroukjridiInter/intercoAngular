@@ -1,4 +1,8 @@
-<div id="card-list">
-	<app-playing-card />
-	<app-playing-card [monster]="monster1"/>
+<div id="search-bar-container">
+	<app-search-bar
+		(searchButtonClicked)="increaseCount()"
+		[(search)]="search"
+	/>
 </div>
+Search: {{search}}<br />
+Clicked Count: {{count}}
